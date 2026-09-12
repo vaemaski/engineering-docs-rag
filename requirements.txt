@@ -1,0 +1,6 @@
+langchain
+faiss-cpu
+openai
+python-dotenv
+beautifulsoup4
+requests
