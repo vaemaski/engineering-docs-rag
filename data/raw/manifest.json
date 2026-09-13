@@ -1,0 +1,80 @@
+[
+  {
+    "url": "https://docs.pytorch.org/docs/stable/data.html",
+    "final_url": "https://docs.pytorch.org/docs/2.14/data.html",
+    "title": "torch.utils.data#",
+    "slug": "data"
+  },
+  {
+    "url": "https://docs.pytorch.org/docs/stable/nn.html",
+    "final_url": "https://docs.pytorch.org/docs/2.14/nn.html",
+    "title": "torch.nn#",
+    "slug": "nn"
+  },
+  {
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Linear.html",
+    "final_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.Linear.html",
+    "title": "Linear#",
+    "slug": "torch.nn.Linear"
+  },
+  {
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Conv2d.html",
+    "final_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.Conv2d.html",
+    "title": "Conv2d#",
+    "slug": "torch.nn.Conv2d"
+  },
+  {
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.LSTM.html",
+    "final_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.LSTM.html",
+    "title": "LSTM#",
+    "slug": "torch.nn.LSTM"
+  },
+  {
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Embedding.html",
+    "final_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.Embedding.html",
+    "title": "Embedding#",
+    "slug": "torch.nn.Embedding"
+  },
+  {
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html",
+    "final_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.CrossEntropyLoss.html",
+    "title": "CrossEntropyLoss#",
+    "slug": "torch.nn.CrossEntropyLoss"
+  },
+  {
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.MSELoss.html",
+    "final_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.MSELoss.html",
+    "title": "MSELoss#",
+    "slug": "torch.nn.MSELoss"
+  },
+  {
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.ReLU.html",
+    "final_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.ReLU.html",
+    "title": "ReLU#",
+    "slug": "torch.nn.ReLU"
+  },
+  {
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Dropout.html",
+    "final_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.Dropout.html",
+    "title": "Dropout#",
+    "slug": "torch.nn.Dropout"
+  },
+  {
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.BatchNorm2d.html",
+    "final_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.BatchNorm2d.html",
+    "title": "BatchNorm2d#",
+    "slug": "torch.nn.BatchNorm2d"
+  },
+  {
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Sequential.html",
+    "final_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.Sequential.html",
+    "title": "Sequential#",
+    "slug": "torch.nn.Sequential"
+  },
+  {
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Module.html",
+    "final_url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.Module.html",
+    "title": "Module#",
+    "slug": "torch.nn.Module"
+  }
+]
