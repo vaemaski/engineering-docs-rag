@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What does DataLoader's num_workers argument do?",
+    "expected_source": "data.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/data.html",
+    "expected_answer": "num_workers controls how many subprocesses are spawned to load data in parallel. The default (0) loads data in the main process; a positive integer enables multi-process loading, with each worker getting its own copy of the dataset.",
+    "category": "simple_fact"
+  },
+  {
+    "question": "How do I create a custom Dataset class in PyTorch?",
+    "expected_source": "data.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/data.html",
+    "expected_answer": "Subclass torch.utils.data.Dataset and implement __len__ (returns dataset size) and __getitem__ (returns a sample given an index).",
+    "category": "simple_fact"
+  },
+  {
+    "question": "What is the difference between torch.nn.Module and torch.nn.functional?",
+    "expected_source": "nn.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/nn.html",
+    "expected_answer": "nn.Module classes are stateful layers with learnable parameters that you instantiate and reuse; nn.functional provides stateless functions that take all inputs (including weights) explicitly, with no parameters stored internally.",
+    "category": "simple_fact"
+  },
+  {
+    "question": "What are the required arguments for nn.Linear?",
+    "expected_source": "torch.nn.Linear.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Linear.html",
+    "expected_answer": "in_features and out_features are required, specifying the size of each input and output sample. bias is optional (defaults to True).",
+    "category": "simple_fact"
+  },
+  {
+    "question": "What does the stride parameter control in Conv2d?",
+    "expected_source": "torch.nn.Conv2d.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Conv2d.html",
+    "expected_answer": "stride controls the step size the convolutional kernel moves across the input; a larger stride reduces the spatial size of the output.",
+    "category": "simple_fact"
+  },
+  {
+    "question": "What shape does an LSTM layer expect its input to be in?",
+    "expected_source": "torch.nn.LSTM.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.LSTM.html",
+    "expected_answer": "By default (batch_first=False), input shape is (seq_len, batch, input_size). With batch_first=True, it's (batch, seq_len, input_size).",
+    "category": "simple_fact"
+  },
+  {
+    "question": "What is the purpose of nn.Embedding and what are its main parameters?",
+    "expected_source": "torch.nn.Embedding.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Embedding.html",
+    "expected_answer": "nn.Embedding stores a lookup table mapping indices to dense vectors, commonly used for word/token embeddings. Main parameters are num_embeddings (vocabulary size) and embedding_dim (vector size).",
+    "category": "simple_fact"
+  },
+  {
+    "question": "When should I use CrossEntropyLoss versus other loss functions?",
+    "expected_source": "torch.nn.CrossEntropyLoss.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html",
+    "expected_answer": "CrossEntropyLoss is used for multi-class classification; it combines LogSoftmax and negative log-likelihood loss internally, so raw logits (not softmax outputs) should be passed in.",
+    "category": "simple_fact"
+  },
+  {
+    "question": "How is MSELoss calculated?",
+    "expected_source": "torch.nn.MSELoss.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.MSELoss.html",
+    "expected_answer": "MSELoss computes the mean squared error (squared L2 norm) between each predicted value and its target, averaged (by default) across all elements.",
+    "category": "simple_fact"
+  },
+  {
+    "question": "What does the ReLU activation function do?",
+    "expected_source": "torch.nn.ReLU.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.ReLU.html",
+    "expected_answer": "ReLU applies max(0, x) elementwise -- it zeroes out negative values and passes positive values through unchanged.",
+    "category": "simple_fact"
+  },
+  {
+    "question": "How does Dropout help prevent overfitting?",
+    "expected_source": "torch.nn.Dropout.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Dropout.html",
+    "expected_answer": "Dropout randomly zeroes some elements of the input with probability p during training, which prevents units from co-adapting too much and reduces overfitting. It's disabled during evaluation.",
+    "category": "simple_fact"
+  },
+  {
+    "question": "What does BatchNorm2d normalize, and what is the num_features argument?",
+    "expected_source": "torch.nn.BatchNorm2d.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.BatchNorm2d.html",
+    "expected_answer": "BatchNorm2d normalizes activations across the batch for each channel in a 4D input (N, C, H, W). num_features is the number of channels (C) to normalize.",
+    "category": "simple_fact"
+  },
+  {
+    "question": "How do I chain multiple layers together using nn.Sequential?",
+    "expected_source": "torch.nn.Sequential.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Sequential.html",
+    "expected_answer": "Pass the layers as ordered arguments to nn.Sequential (or an OrderedDict); it chains them so input flows through each layer in the order given.",
+    "category": "simple_fact"
+  },
+  {
+    "question": "What methods do I need to override when subclassing nn.Module?",
+    "expected_source": "torch.nn.Module.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Module.html",
+    "expected_answer": "At minimum, override __init__ (to define layers/parameters) and forward (to define the computation performed on input).",
+    "category": "simple_fact"
+  },
+  {
+    "question": "How do I save and load a nn.Module's state_dict?",
+    "expected_source": "torch.nn.Module.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Module.html",
+    "expected_answer": "Use model.state_dict() to get the parameters as an ordered dict, torch.save() to save it, torch.load() to load it back, and model.load_state_dict() to apply it to a model instance.",
+    "category": "simple_fact"
+  },
+  {
+    "question": "If I pass a tensor through nn.Linear and then nn.ReLU, what happens to negative values in the output?",
+    "expected_source": "torch.nn.Linear.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Linear.html",
+    "expected_answer": "nn.Linear applies a linear transformation (which can produce negative values), and the following ReLU then zeroes out any negative values in that output, passing positive values through unchanged.",
+    "category": "multi_hop",
+    "note": "Requires combining info from both Linear and ReLU docs -- checks if retrieval pulls both relevant chunks."
+  },
+  {
+    "question": "If I stack Conv2d and BatchNorm2d in nn.Sequential, in what order are they typically applied and why?",
+    "expected_source": "torch.nn.Conv2d.md",
+    "expected_url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Conv2d.html",
+    "expected_answer": "Conv2d is typically applied first, followed by BatchNorm2d, since BatchNorm normalizes the activations produced by the convolution before they pass to the next layer (often followed by an activation like ReLU).",
+    "category": "multi_hop",
+    "note": "Requires reasoning across Conv2d, BatchNorm2d, and Sequential docs."
+  },
+  {
+    "question": "What is the learning_rate parameter in nn.Linear?",
+    "expected_source": null,
+    "expected_url": null,
+    "expected_answer": "nn.Linear does not have a learning_rate parameter -- learning rate is set on the optimizer (e.g. torch.optim.SGD or Adam), not on individual layers.",
+    "category": "adversarial",
+    "note": "Trick question -- nn.Linear has no such parameter. Should NOT confidently answer as if it exists; should correct the premise or say it's not found in context."
+  },
+  {
+    "question": "How do I use torch.optim.Adam with weight decay?",
+    "expected_source": null,
+    "expected_url": null,
+    "category": "out_of_scope",
+    "note": "Optimizer docs not in corpus. Should trigger 'I don't know'."
+  },
+  {
+    "question": "How do I convert a PyTorch model to ONNX format?",
+    "expected_source": null,
+    "expected_url": null,
+    "category": "out_of_scope",
+    "note": "ONNX export docs not in corpus. Should trigger 'I don't know'."
+  },
+  {
+    "question": "What is torch.autograd and how does automatic differentiation work?",
+    "expected_source": null,
+    "expected_url": null,
+    "category": "out_of_scope",
+    "note": "Autograd docs not in corpus. Should trigger 'I don't know'."
+  }
+]
